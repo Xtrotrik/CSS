@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+    }
+    
+    .nbar {
+        list-style-type: none;
+        background-color: black;
+        height: 60px;
+        padding: 0px;
+        margin: 0px;
+        position: sticky;
+    }
+    
+    .nbar>li a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        padding: 18px;
+    }
+    
+    .dp {
+        position: relative;
+        /* height: 200px !important; */
+    }
+    
+    .dpc {
+        list-style-type: none;
+        position: absolute;
+        display: none !important;
+        padding: 0px;
+        top: 60px;
+        width: 100%;
+    }
+    
+    .dp:hover .dpc,
+    .dp:hover .dpc a {
+        background-color: white;
+        color: black;
+    }
+    
+    .dp:hover .dpc {
+        display: block !important;
+    }
+    
+    .nbar>li {
+        display: inline-block;
+        height: inherit;
+    }
+    
+    .nbar>li a:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .newyork {
+        z-index: -1;
+        background-image: url('ny.jpg');
+        height: 100vh;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .ntext {
+        position: absolute;
+        top: 500px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .ntext0 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 28px;
+        color: white;
+    }
+    
+    .ntext1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        color: white;
+        font-style: italic;
+        line-height: 70px;
+    }
+    
+    .bandhead {
+        margin: 0px;
+        text-align: center;
+    }
+    
+    .band0 {
+        padding: 50px;
+        font-family: sans-serif;
+    }
+    
+    .band1 {
+        text-align: center;
+        font-style: italic;
+        font-size: 14px;
+        color: gray;
+    }
+    
+    .band2 {
+        text-align: justify;
+        padding-top: 40px;
+        padding-right: 250px;
+        padding-left: 250px;
+    }
+    
+    .name {
+        margin: 80px;
+    }
+    
+    .name1 {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+    }
+    
+    .tc {
+        background-color: black;
+        position: relative;
+        height: 1000px;
+    }
+    
+    .tc h1 {
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        position: absolute;
+        top: 100px;
+        left: 600px;
+        margin: 0px;
+    }
+    
+    .tc .tc1 p {
+        color: gray;
+        position: absolute;
+        top: 170px;
+        left: 570px;
+        margin: 0px;
+    }
+    
+    .tc .box {
+        background-color: white;
+        color: gray;
+        position: absolute;
+        top: 250px;
+        left: 300px;
+        width: 800px;
+        margin: 0px;
+    }
+    
+    .tc .box div {
+        padding: 5px;
+        border-bottom: 1px solid gray;
+    }
+    
+    .tc .sd {
+        color: white;
+        background-color: red;
+        margin: 2.8px;
+        padding: 3px;
+    }
+    
+    .photo {
+        position: absolute;
+        width: 700px;
+        top: 400px;
+        left: 360px;
+    }
+    
+    .photo1 {
+        display: inline-block;
+        width: 200px;
+        margin: 10px;
+    }
+    
+    .photo1 img {
+        width: 100%;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul class="nbar">
+            <li><a href="">HOME</a></li>
+            <li><a href="">FEEDBACK</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li class="dp">
+                <a href="">MORE</a>
+                <ul class="dpc">
+                    <li>
+                        <a href="">
+                            EXTRA
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="newyork">
+        <div class="ntext">
+            <div class="ntext0">
+                New York
+            </div>
+            <div class="ntext1">
+                The atmosphere in New York is lorem ipsum.
+            </div>
+        </div>
+    </div>
+
+    <div class="band0">
+        <h1 class="bandhead">
+            THE BAND
+        </h1>
+    </div>
+
+    <div class="band1">
+        WE LOVE MUSIC
+    </div>
+
+    <div class="band2">
+        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+        ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+
+    <div class="name">
+        <div class="name1">
+            <p>NAME</p> <img src="bandmember.jpg" alt="">
+        </div>
+
+        <div class="name1">
+            <p>NAME</p> <img src="bandmember.jpg" alt="">
+        </div>
+
+        <div class="name1">
+            <p>NAME</p> <img src="bandmember.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div class="tc">
+        <h1>TOUR DATE</h1>
+
+        <div class="tc1">
+            <p>Remember to book your tickets!</p>
+        </div>
+
+        <div class="box">
+            <div>SPETEMBER
+                <span class="sd">
+                Sold out
+            </span>
+            </div>
+            <div>OCTOBER
+                <span class="sd">
+                    Sold out
+                </span>
+            </div>
+            <div>NOVEMBER</div>
+        </div>
+
+        <div class="photo">
+
+            <div class="photo1"><img src="CSS/newyork.jpg" alt=""></div>
+
+            <div class="photo1"><img src="CSS/paris.jpg" alt=""></div>
+
+            <div class="photo1"><img src="CSS/sanfran.jpg" alt=""></div>
+
+        </div>
+
+</body>
+
+</html>

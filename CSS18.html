@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li a {
+            color: red;
+        }
+        
+        ul li a:hover {
+            color: aqua;
+        }
+        
+        p span {
+            background-color: aquamarine;
+            color: red;
+            width: 200px;
+            display: block;
+            visibility: hidden;
+        }
+        
+        p:hover span {
+            visibility: visible;
+            display: block;
+            width: 300px;
+        }
+        
+        ul li:first-child {
+            background-color: seagreen;
+        }
+        
+        .demo::first-line {
+            color: blue;
+        }
+        
+        .demo::first-letter {
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="">Click me</a>
+        </li>
+        <li>
+            <a href="">click 2</a>
+        </li>
+    </ul>
+    <a href="">outside</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsam, architecto, itaque quidem corrupti modi voluptatum cupiditate inventore accusantium molestiae doloribus assumenda vero saepe nobis maxime provident nemo fuga ea.
+        <span>I am tooltip</span>
+    </p>
+    <p class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dicta dolores laudantium minima earum sunt fuga corrupti ratione accusamus iusto, blanditiis illo provident dolorum quod placeat quo optio magni aliquid.Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Voluptatum dicta dolores laudantium minima earum sunt fuga corrupti ratione accusamus iusto, blanditiis illo provident dolorum quod placeat quo optio magni aliquid.Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Voluptatum dicta dolores laudantium minima earum sunt fuga corrupti ratione accusamus iusto, blanditiis illo provident dolorum quod placeat quo optio magni aliquid.</p>
+</body>
+
+</html>

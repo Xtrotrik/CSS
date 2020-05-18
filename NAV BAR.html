@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+    
+    .nbar {
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        list-style-type: none;
+        height: 38px;
+    }
+    
+    .nbar>li {
+        display: table-cell;
+        height: inherit;
+    }
+    
+    .nbar>li>a {
+        text-decoration: none;
+        color: white;
+        padding: 11px;
+        height: inherit;
+        display: block;
+    }
+    
+    .nbar>li>a:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .drop {
+        position: relative;
+    }
+    
+    .drop1 {
+        position: absolute;
+        display: none;
+        list-style-type: none;
+        top: 38px;
+    }
+    
+    .drop:hover .drop1 {
+        display: block;
+        background-color: black;
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .drop1 li {
+        height: 38px;
+        box-sizing: border-box;
+    }
+    
+    .drop1 a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        height: inherit;
+        padding: 8px;
+    }
+    
+    .drop1 a:hover {
+        color: black;
+        background-color: white;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul class="nbar">
+            <li><a href="">HOME</a></li>
+            <li><a href="">BAND</a></li>
+            <li><a href="">TOUR</a></li>
+            <li class="drop">
+                <a href="">MORE</a>
+                <ul class="drop1">
+                    <li>
+                        <a href="">EXTRA</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>

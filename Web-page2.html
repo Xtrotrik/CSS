@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        
+        .nav>ul {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            height: 40px;
+        }
+        
+        .nav>ul>li {
+            list-style-type: none;
+            display: inline-block;
+            padding-top: 5px;
+        }
+        
+        .nav>ul>li>a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            color: white;
+            padding: 10px;
+        }
+        
+        .nav>ul>li>a:hover {
+            background-color: blanchedalmond;
+            color: black;
+        }
+        
+        .d>ul {
+            /* background-color: black; */
+            text-align: center;
+        }
+        
+        .d>ul>li>a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 22px;
+            color: black;
+            padding: 10px;
+            position: relative;
+        }
+        
+        .d>ul>li>a:hover {
+            color: coral;
+        }
+        
+        .d1>li {
+            display: block;
+            padding: 10px;
+            width: 120px;
+        }
+        
+        .d1 {
+            list-style-type: none;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            top: 40px;
+            display: none;
+        }
+        
+        .d:hover .d1 {
+            display: block;
+        }
+        
+        .h {
+            background-image: url(ny.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .h>h1 {
+            margin: 0px;
+            position: absolute;
+            top: 550px;
+            left: 600px;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .h1 {
+            margin: 0px;
+            position: absolute;
+            top: 600px;
+            left: 590px;
+            color: white;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .bgf {
+            position: absolute;
+            top: 1050px;
+            left: 615px;
+        }
+        
+        .img {
+            padding-left: 450px;
+            padding-top: 100px;
+            height: 100vh;
+        }
+        
+        .frm {
+            background-color: black;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .frm>a {
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 50px;
+            position: absolute;
+            top: 150px;
+            left: 530px;
+            text-decoration: none;
+        }
+        
+        .qur {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 22px;
+            color: blanchedalmond;
+            position: absolute;
+            top: 300px;
+            left: 500px;
+            display: none;
+        }
+        
+        .frm>a:hover+.qur,
+        .frm:hover .qur {
+            display: inline-block;
+        }
+        
+        .subcenter {
+            position: absolute;
+            left: 230px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="">HOME</a>
+            </li>
+            <li>
+                <a href="">IMAGES</a>
+            </li>
+            <li>
+                <a href="">MAIL</a>
+            </li>
+            <li class="d">
+                <a href="">CONTACT US</a>
+                <ul class="d1">
+                    <li>
+                        <a href="">MOBILE</a>
+                    </li>
+                    <li>
+                        <a href="">EMAIL</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="h">
+        <H1>LONDON</H1>
+        <div class="h1">
+            A PLACE TO LIVE
+        </div>
+    </div>
+
+
+    <div class="img">
+        <img src="41HeL2cy9LL.png" alt="">
+    </div>
+
+    <form class="bgf">
+        <input type="text">
+    </form>
+
+
+    <div class="frm">
+        <a href="">ENTER YOUR DETAIL</a>
+
+        <form class="qur">
+            First name <input type="text"> Last name <input type="text">
+            <br> <br>
+            <input class="subcenter" type="button" name="" id="" value="SUBMIT">
+        </form>
+    </div>
+
+</body>
+
+
+</html>

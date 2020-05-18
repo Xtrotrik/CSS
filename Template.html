@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .nav {
+        background-color: rgba(184, 46, 46, 0.959);
+        width: 25%;
+        height: 100vh;
+        position: fixed;
+    }
+    
+    .nav h1 {
+        color: white;
+        margin: 0px;
+        padding-top: 130px;
+        padding-bottom: 130px;
+        padding-left: 50px;
+        font-size: 40px;
+    }
+    
+    .nav ul {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .nav ul li {
+        list-style-type: none;
+        margin: 0px 40px;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 160px;
+    }
+    
+    .nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: inherit;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    
+    .nav ul li a:hover {
+        background-color: white;
+        color: rgb(0, 0, 0);
+    }
+    
+    .dropdown {
+        padding: 20px;
+    }
+    
+    #c {
+        background-color: rgba(184, 46, 46, 0.959);
+    }
+    
+    #dc {
+        padding: 10px;
+    }
+    
+    .main {
+        margin-left: 25%;
+        padding-left: 60px;
+        padding-top: 100px;
+    }
+    
+    .id {
+        color: rgba(184, 46, 46, 0.959);
+        font-size: 70px;
+    }
+    
+    .showc {
+        padding-top: 10px;
+        font-size: 40px;
+        color: rgba(184, 46, 46, 0.959);
+    }
+    
+    .img {
+        margin-left: 25%;
+    }
+    
+    .img img {
+        width: 40%;
+        padding-left: 60px;
+        padding-top: 25px;
+    }
+    
+    .main2 {
+        margin-left: 25%;
+    }
+    
+    .spc {
+        margin: 0px;
+        padding-top: 40px;
+        padding-left: 60px;
+        font-size: 40px;
+        color: rgba(184, 46, 46, 0.959);
+    }
+    
+    .pg {
+        margin: 0px 90px;
+        text-align: left;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .photo {
+        margin-left: 25%;
+    }
+    
+    .head3 {
+        padding-left: 60px;
+        padding-top: 25px;
+        margin: 0px;
+    }
+    
+    .photoSet img {
+        width: 30%;
+        padding-left: 25px;
+    }
+    
+    .box {
+        margin-left: 25%;
+        position: relative;
+    }
+    
+    .box1 {
+        background-color: rgba(156, 156, 156, 0.801);
+        height: 180px;
+        width: 305px;
+        position: absolute;
+        left: 358px;
+    }
+    
+    .box2 {
+        background-color: rgba(156, 156, 156, 0.801);
+        height: 180px;
+        width: 305px;
+        position: absolute;
+        left: 25px;
+    }
+    
+    .box3 {
+        background-color: rgba(156, 156, 156, 0.801);
+        height: 180px;
+        width: 305px;
+        position: absolute;
+        left: 690px;
+    }
+    
+    .pk {
+        margin-left: 25%;
+        padding-top: 200px;
+    }
+    
+    .pk>h1 {
+        padding-left: 25px;
+        color: rgba(184, 46, 46, 0.959);
+    }
+    
+    .pk>div {
+        padding-left: 25px;
+    }
+    
+    .table {
+        margin-left: 25%;
+        padding-left: 150px;
+        padding-top: 100px;
+    }
+    
+    .tbdata0>tbody>tr>th {
+        padding: 15px 40px;
+        background-color: rgba(163, 161, 161, 0.753);
+    }
+    
+    .tbdata0>tbody>tr td {
+        padding: 15px 40px;
+        background-color: rgba(128, 128, 128, 0.356);
+    }
+    
+    .contact {
+        margin-left: 25%;
+    }
+    
+    .contact>h1 {
+        font-size: 30px;
+        color: rgba(184, 46, 46, 0.959);
+        padding-left: 25px;
+        margin: 0px;
+    }
+    
+    .contact>div {
+        padding-left: 25px;
+        padding-top: 10px;
+    }
+    
+    .foram {
+        margin-top: 70px;
+        text-align: center;
+        padding: 5px;
+        color: blueviolet;
+    }
+    
+    .fr {
+        padding: 5px;
+        margin: 10px;
+        font-size: 16px;
+        width: 30%;
+        border: transparent;
+        border-bottom: 1px solid black;
+    }
+    
+    .contact>.foram>button {
+        width: 400px;
+        height: 30px;
+        background-color: rgba(184, 46, 46, 0.959);
+        color: white;
+    }
+</style>
+
+<body>
+
+    <nav class="nav" id="dark">
+        <h1 id="Line">Company <br> Name</h1>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Showcase</a>
+            </li>
+            <li>
+                <a href="">Designers</a>
+            </li>
+            <li>
+                <a href="">Packages</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button id="c"> SWITCH TO DARK</button>
+            <div class="dropdontent" id="dc">
+                <button id="change">TURN ON</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main" id="title">
+        <div class="id">
+            Interior Design
+        </div>
+        <div class="showc">
+            Showcase
+        </div>
+    </div>
+
+    <div class="img" id="imgbg">
+        <img src="kitchenconcrete.jpg" alt="">
+        <img src="atrium.jpg" alt="">
+        <img src="livingroom.jpg" alt="">
+        <img src="bedroom.jpg" alt="">
+        <img src="diningroom.jpg" alt="">
+        <img src="livingroom2.jpg" alt="">
+    </div>
+
+    <div class="main2" id="Spclbg">
+        <h1 class="spc">Special</h1>
+        <br> <br>
+        <div class="pg" id="Spclpg">
+            We are a interior design service that focus on what's best for your home and what's best for you!
+            <br> <br> Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+
+        <h1 class="spc"> Designers</h1>
+        <div class="pg" id="Spclbg2">
+            The best team in the world. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+
+    </div>
+
+    <div class="photo" id="darkPhoto">
+        <h3 class="head3" id="photohead">Our designers are thoughtfully chosen: <br> <br></h3>
+
+        <div class="photoSet">
+            <img src="team1.jpg" alt="">
+            <img src="team2.jpg" alt="">
+            <img src="team3.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="box">
+
+        <div class="box1">
+            <h1> John Doe </h1>
+            <span>CEO & Founder</span>
+            <div>Phasellus eget enim eu lectus faucibus vestibulum. <br> Suspendisse sodales pellentesque elementum.</div>
+        </div>
+
+        <div class="box2">
+            <h1> Jane Doe </h1>
+            <span>Designer</span>
+            <div>Phasellus eget enim eu lectus faucibus vestibulum. <br> Suspendisse sodales pellentesque elementum.</div>
+        </div>
+
+        <div class="box3">
+            <h1> Mike Ross </h1>
+            <span>Architect</span>
+            <div>Phasellus eget enim eu lectus faucibus vestibulum. <br> Suspendisse sodales pellentesque elementum.</div>
+        </div>
+
+    </div>
+
+    <div class="pk" id="pkbg">
+        <h1>
+            Packages
+        </h1>
+
+        <div id="pkpg">
+            Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        </div>
+    </div>
+
+    <div class="table" id="tablebg">
+        <table class="tbdata0">
+            <tr>
+                <th>BASIC</th>
+            </tr>
+            <tr>
+                <td>Floorplanning</td>
+            </tr>
+            <tr>
+                <td>10 hours support</td>
+            </tr>
+            <tr>
+                <td>Photography</td>
+            </tr>
+            <tr>
+                <td>20% furniture discount</td>
+            </tr>
+            <tr>
+                <td> Good deals</td>
+            </tr>
+
+            <tr>
+                <td>$199 per room</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="contact" id="contactbg">
+        <h1>Contact</h1>
+        <div id="data">Do you want to style your home</div>
+
+        <div class="foram">
+            Name
+            <input type="text" class="fr"> <br> Email
+            <input type="email" class="fr" name="" id=""> <br> Message
+            <input type="text" class="fr" name="" id="">
+            <br> <br>
+            <button> submit</button>
+        </div>
+    </div>
+
+</body>
+<script>
+    document.getElementById('dc').style.display = "none";
+    document.getElementById('c').addEventListener('click', function() {
+        if (document.getElementById('dc').style.display = "none") {
+            document.getElementById('dc').style.display = "block";
+        } else {
+            document.getElementById('dc').style.display = "none";
+        }
+    });
+
+    document.getElementById('Line').style.border = "1px solid transparent";
+    document.getElementById('Line').addEventListener('click', function() {
+        if (document.getElementById('Line').style.border == "1px solid transparent") {
+            document.getElementById('Line').style.border = "1px solid yellow";
+            // this.style.boxShadow = "3px 3px yellow";
+        } else {
+            document.getElementById('Line').style.border = "1px solid transparent";
+        }
+    })
+
+
+    document.getElementById('change').addEventListener('click', function() {
+        document.getElementById('dark').style.backgroundColor = "black";
+        document.getElementById('title').style.backgroundColor = "black";
+        document.getElementById('imgbg').style.backgroundColor = "black";
+        document.getElementById('Spclbg').style.backgroundColor = "black";
+        document.getElementById('darkPhoto').style.backgroundColor = "black";
+        document.getElementById('pkbg').style.backgroundColor = "black";
+        document.getElementById('tablebg').style.backgroundColor = "black";
+        document.getElementById('contactbg').style.backgroundColor = "black";
+
+        document.getElementById('Spclpg').style.color = "white";
+        document.getElementById('Spclbg2').style.color = "white";
+        document.getElementById('pkpg').style.color = "white";
+        document.getElementById('data').style.color = "white";
+    });
+
+
+
+
+    function changecolour(x) {
+        x.innerHTML =
+    }
+</script>
+
+</html>

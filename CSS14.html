@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .float-left {
+        float: right;
+    }
+    
+    .float-left::after {
+        clear: both;
+    }
+    
+    .clear {
+        overflow: auto;
+        clear: both;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <p class="clear">
+        <img src="bandmember.jpg" alt="" class="float-left"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur quam eaque inventore veniam cumque ducimus, dolores placeat itaque fugiat sed facere molestiae consequatur ut enim consectetur
+        doloremque voluptates incidunt ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta officia expedita praesentium velit quia incidunt iusto, porro dolor ad dolorum consequatur fuga perferendis sint! Aliquid libero quia ab illo!
+        Suscipit!
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum non unde eligendi totam reprehenderit. Autem earum consequatur illo eos, accusantium modi, ab, explicabo eum ipsam maxime soluta quidem architecto.</p>
+</body>
+
+</html>

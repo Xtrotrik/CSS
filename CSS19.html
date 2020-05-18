@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* p::before {
+        content: url(bandmember.jpg);
+    } */
+    
+    p::selection {
+        color: red;
+        background-color: black;
+    }
+    
+    p::first-letter {
+        color: black;
+        font-size: 50px;
+    }
+    
+    p::first-line {
+        background-color: blue;
+    }
+    
+    p:hover .tt {
+        visibility: visible;
+    }
+    
+    .tt {
+        visibility: hidden;
+        display: block;
+        color: blue;
+        background-color: black;
+        width: 50px;
+    }
+</style>
+
+
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores incidunt ex, fugiat adipisci quae reprehenderit eius modi quisquam eaque. Temporibus voluptatum consequuntur, obcaecati praesentium a nostrum incidunt animi voluptatem quasi. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Id, aliquid illum quas reiciendis sed delectus perferendis maxime explicabo, deserunt vero praesentium culpa magni velit alias molestiae, aspernatur veritatis eligendi cumque.
+
+        <span class="tt">
+            Tooltip
+        </span>
+
+    </p>
+
+</body>
+
+</html>
